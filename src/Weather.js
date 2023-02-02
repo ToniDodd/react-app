@@ -5,8 +5,13 @@ export default function Weather() {
     <div className="wrap">
       <div className="weather-app">
         <form>
-          <input type="search" placeholder="Enter a city..." />
-          <input type="submit" value="Search" />
+            <div className="row">
+                <div className="col-9">
+          <input type="search" placeholder="Enter a city..." /></div>
+          <div className="col-3">
+          <input type="submit" value="Search" className="btn btn-primary" />
+          </div>
+          </div>
           <h2 className="city">Eugene</h2>
           <div classname="container">
             <div className="row">
