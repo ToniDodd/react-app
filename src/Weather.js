@@ -1,6 +1,18 @@
+import axios from "axios";
 import React from "react";
 
 export default function Weather() {
+
+function showData(response){
+    console.log(response)
+}
+
+
+
+    let city = "Eugene";
+    let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}&key=tb9021cb57677162636fa4a00f5o70a3&units=imperial`;
+axios.get(apiUrl).then(showData)
+
   return (
     
       <div className="weather-app">
