@@ -53,51 +53,12 @@ hr {
     rgb(240, 251, 244) 100.7%
   );
 }
-.search-bar{
-  padding: 0;
-}
+
 .weather-details {
   text-align: right;
 }
-.forecast-details {
-  text-align: right;
-}
-.forecast-icon {
-  position: relative;
-  top: 20px;
-  right: 5px;
-}
-.forecast-day {
-  position: relative;
-  right: 7px;
-}
-#forecast-temp-min {
-  opacity: 0.6;
-}
-#forecast-icon {
-  height: 48px;
 
-  width: 48px;
-}
-.units {
-  position: relative;
-  left: 5px;
-  color: black;
-}
-.link {
-  color: #0069d9;
-}
-.forecast-background {
-  border: 1px solid black;
-  background: white;
-}
-
-#temp {
-  position: relative;
-  top: -20px;
-  font-size: 50px;
-}
-#city-search {
+.city-search {
   width: 100%;
   padding: 5px 8px;
   margin-bottom: 15px;
@@ -106,7 +67,7 @@ hr {
   line-height: 1.5;
   font-family: "Courier New", Courier, monospace;
 }
-#city-submit {
+.city-submit {
   width: 100%;
   padding: 5px 8px;
   margin-bottom: 15px;

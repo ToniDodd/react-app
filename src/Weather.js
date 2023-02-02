@@ -7,9 +7,9 @@ export default function Weather() {
         <form>
             <div className="row">
                 <div className="col-9">
-          <input type="search" placeholder="Enter a city..." /></div>
+          <input type="search" placeholder="Enter a city..." className="city-search" /></div>
           <div className="col-3">
-          <input type="submit" value="Search" className="btn btn-primary" />
+          <input type="submit" value="Search" className="city-submit" />
           </div>
           </div>
           <h2 className="city">Eugene</h2>
