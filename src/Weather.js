@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Weather() {
   return (
-    <div className="wrap">
+    <div className="weather">
       <div className="weather-app">
         <form>
             <div className="row">
