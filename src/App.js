@@ -8,8 +8,9 @@ function App() {
 <Weather />
 <div>
      <p className="github">
-        <a href="https://github.com/ToniDodd/react-app">Open-source code</a>
-        by Toni Dodd
+        <a href="https://github.com/ToniDodd/react-app">Open-source code </a>
+      
+         by Toni Dodd
      </p></div>
 
 
