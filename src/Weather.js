@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Weather() {
   return (
-    <div className="weather">
+    
       <div className="weather-app">
         <form>
             <div className="row">
@@ -76,16 +76,8 @@ export default function Weather() {
             </div>
           </div>
         </form>
-      </div>
-      <p className="github">
-        <a
-          className="link"
-          href="https://github.com/ToniDodd/react-app"
-        >
-          Open-source code
-        </a>{" "}
-        by Toni Dodd
-      </p>
+      
+ 
     </div>
   );
 }
