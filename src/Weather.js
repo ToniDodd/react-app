@@ -1,26 +1,30 @@
 import axios from "axios";
+import { Dna } from  'react-loader-spinner'
 import React, { useState } from "react";
 
-export default function Weather() {
-    const [ready, setReady] = useState(false);
-const [temp, setTemp] = useState(null);
-const [weatherData, setWeatherData] = useState({});
+export default function Weather(props) {
+    
+const [weatherData, setWeatherData] = useState({ready: false});
 
 function showData(response){
     console.log(response)
-    setTemp(Math.round(response.data.temperature.current));
-    setReady(true);
+    
+  
     setWeatherData({
+        ready: true,
         temperature: Math.round(response.data.temperature.current),
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.temperature.humidity,
         description: response.data.condition.description,
-        city: response.data.city
+        city: response.data.city,
+        icon: response.data.condition.icon_url,
+        iconDescription: response.data.condition.icon,
+        date: "Wednesday 3:10pm"
 
-    })
+    });
 }
 
-if (ready){
+if (weatherData.ready){
     return (
 <div className="weather-app">
         <form>
@@ -36,17 +40,17 @@ if (ready){
             <div className="row">
               <div className="col-6">
                 <ul>
-                  <li>Wednesday 3:10pm</li>
+                  <li>{weatherData.date}</li>
                   <li>{weatherData.description}</li>
-                  <li><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly cloudy" />
-                  <span className="temperature">{temp}</span>°<span>F
+                  <li><img src={weatherData.icon} alt={weatherData.iconDescription} />
+                  <span className="temperature">{weatherData.temperature}</span>°<span>F
                     </span></li>
                 </ul>
               </div>
               <div className="col-6">
                 <ul>
                   <li>Humidity: {weatherData.humidity}%</li>
-                  <li>Wind:{weatherData.wind}mph</li>
+                  <li>Wind: {weatherData.wind}mph</li>
                 </ul>
               </div>
               <hr />
@@ -102,10 +106,17 @@ if (ready){
     </div>
   ); 
 } else{
-    let city = "Eugene";
-    let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}&key=tb9021cb57677162636fa4a00f5o70a3&units=imperial`;
+    
+    let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=tb9021cb57677162636fa4a00f5o70a3&units=imperial`;
 axios.get(apiUrl).then(showData)
 
-return("loading....")
+return(<Dna
+    visible={true}
+    height="80"
+    width="80"
+    ariaLabel="dna-loading"
+    wrapperStyle={{}}
+    wrapperClass="dna-wrapper"
+  />);
 }
 }

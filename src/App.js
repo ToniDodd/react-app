@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-<Weather />
+<Weather defaultCity="Eugene"/>
 <div>
      <p className="github">
         <a href="https://github.com/ToniDodd/react-app">Open-source code </a>
