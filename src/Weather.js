@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Dna } from  'react-loader-spinner'
 import React, { useState } from "react";
+import DateFormat from "./DateFormat";
 
 export default function Weather(props) {
     
@@ -19,7 +20,7 @@ function showData(response){
         city: response.data.city,
         icon: response.data.condition.icon_url,
         iconDescription: response.data.condition.icon,
-        date: "Wednesday 3:10pm"
+        date: new Date(response.data.time * 1000)
 
     });
 }
@@ -40,7 +41,7 @@ if (weatherData.ready){
             <div className="row">
               <div className="col-6">
                 <ul>
-                  <li>{weatherData.date}</li>
+                  <li><DateFormat date={weatherData.date} /></li>
                   <li>{weatherData.description}</li>
                   <li><img src={weatherData.icon} alt={weatherData.iconDescription} />
                   <span className="temperature">{weatherData.temperature}</span>°<span>F
