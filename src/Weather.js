@@ -31,7 +31,7 @@ axios.get(apiUrl).then(showData)
                 <ul>
                   <li>Wednesday 3:10pm</li>
                   <li>Clouds</li>
-                  <li> ☁️</li>
+                  <li><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly cloudy" />46°F</li>
                 </ul>
               </div>
               <div className="col-6">
@@ -45,42 +45,42 @@ axios.get(apiUrl).then(showData)
                 <div className="col-2">
                   <ul>
                     <li>Thu</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>45</li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul>
                     <li>Fri</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>40</li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul>
                     <li>Sat</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>43</li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul>
                     <li>Sun</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>43</li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul>
                     <li>Mon</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>48</li>
                   </ul>
                 </div>
                 <div className="col-2">
                   <ul>
                     <li>Tue</li>
-                    <li>🌧</li>
+                    <li><img src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png" alt="rain" /></li>
                     <li>43</li>
                   </ul>
                 </div>
