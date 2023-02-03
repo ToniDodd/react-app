@@ -57,6 +57,9 @@ hr {
 .weather-details {
   text-align: right;
 }
+.weather-icon{
+float: left;
+}
 
 .city-search {
   width: 100%;

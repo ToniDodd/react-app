@@ -14,7 +14,7 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
         
             <ul>
                 <li>{day()}</li>
-                <li><img src={props.data.condition.icon_url} alt={props.data.condition.icon} /></li>
+                <li className="weather-icon"><img src={props.data.condition.icon_url} alt={props.data.condition.icon} /></li>
                 <li>{Math.round(props.data.temperature.maximum)}°<span>{Math.round(props.data.temperature.minimum)}°</span></li>
             </ul>
         
