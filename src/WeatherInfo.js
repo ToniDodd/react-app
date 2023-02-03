@@ -1,6 +1,7 @@
 import React from "react";
 import DateFormat from "./DateFormat";
 
+
 export default function WeatherInfo(props){
     return(
         <div classNmae="WeatherInfo">
@@ -11,7 +12,10 @@ export default function WeatherInfo(props){
                 <ul>
                   <li><DateFormat date={props.data.date} /></li>
                   <li>{props.data.description}</li>
-                  <li><img src={props.data.icon} alt={props.data.iconDescription} />
+                  <li>
+                    
+                    
+                <img src={props.data.icon} alt={props.data.condition.icon} />
                   <span className="temperature">{props.data.temperature}</span>°<span>F
                     </span></li>
                 </ul>
