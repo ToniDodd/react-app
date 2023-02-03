@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Dna } from  'react-loader-spinner'
 import React, { useState } from "react";
+import Forecast from "./Forecast";
 
 import WeatherInfo from "./WeatherInfo";
 
@@ -15,6 +16,7 @@ function showData(response){
   
     setWeatherData({
         ready: true,
+        coordinates: response.data.coordinates,
         temperature: Math.round(response.data.temperature.current),
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.temperature.humidity,
@@ -57,6 +59,7 @@ if (weatherData.ready){
           </div>
           </form>
           <WeatherInfo data={weatherData}/>
+          <Forecast coordinates={weatherData.coordinates}/>
          
  
     </div>
