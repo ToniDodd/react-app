@@ -10,7 +10,7 @@ function App() {
      <p className="github">
         <a href="https://github.com/ToniDodd/react-app">Open-source code </a>
       
-         by Toni Dodd
+        {""}  by Toni Dodd
      </p></div>
 
 

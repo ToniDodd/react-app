@@ -1,4 +1,5 @@
 import React from "react";
+import "./DateFormat.css"
 
 export default function DateFormat(props){
     let days = [
@@ -17,7 +18,7 @@ export default function DateFormat(props){
  if (minutes < 10){
     minutes = `0${minutes}`;
  }
-return (<div>
+return (<div className="current-time">
     {day} {hours}:{minutes}
 </div>);
 }

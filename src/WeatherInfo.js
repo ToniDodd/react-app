@@ -1,40 +1,28 @@
 import React from "react";
 import DateFormat from "./DateFormat";
 import Temperature from "./Temperature";
+import "./WeatherInfo.css"
 
 
 
 export default function WeatherInfo(props){
     return(
         <div className="WeatherInfo">
+            <div className="current">
             <h2 className="city">{props.data.city}</h2>
-                <div classname="container ">
-                    <div className="row justify-content-evenly">
-                    <div className="col-6">
-                        <ul>
-                            <li>
-                                <Temperature  fahrenheit= {props.data.temperature} />
-                                <img className="current-icon" src={props.data.icon} alt={props.data.iconDescription} />
-                  <li>{props.data.description}</li>
-                            </li>
-                         </ul>
-                     </div>
-                    
-                    <div className="col-6">
-                        <ul >
-                            <li><DateFormat date={props.data.date} /></li>
-                            
-                            <li>Humidity: {props.data.humidity}%</li>
-                            <li>Wind: {props.data.wind}mph</li>
-                        </ul>
-                    </div>
+            <DateFormat date={props.data.date} />
+             <div className="description">{props.data.description}</div>
+            <div className="current-icon">
+            <img src={props.data.icon} alt={props.data.iconDescription} />
+                </div>
+                <Temperature  fahrenheit= {props.data.temperature} />
+               </div>
+                <div className="conditions">
+                <div className="humidity" >Humidity: {props.data.humidity}%</div>
+                <div className="wind">Wind: {props.data.wind}mph</div>
+                </div>
               <hr />
              
-                    </div>
-              </div>
-             </div>
-          
-      
- 
+            </div>
     );
 }

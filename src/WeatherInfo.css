@@ -1,0 +1,30 @@
+.conditions{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+
+.humidity, .wind{
+    background: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 15px 20px;
+    box-shadow: 5px 5px 5px #F4EDFA;
+   
+
+}
+
+
+.current{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+
+.current-icon{
+    display: flex;
+     justify-content: center;
+}

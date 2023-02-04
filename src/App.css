@@ -1,23 +1,25 @@
+App{
+  display: flex;
+  flex-wrap: flex;
+  max-width: 1150px;
+  min-width: 375px;
+}
+
 body{
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
+  width: 100%;
 
 }
 h2 {
   text-align: center;
-  font-weight: 200;
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 60px;
   padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 ul {
-  list-style: none;
-  margin: 0;
-  margin-bottom: 15px;
-}
-form {
-  text-align: center;
-  margin-top: 12px;
-  width: 100%;
 }
 
 
@@ -28,28 +30,17 @@ a {
 hr {
   padding: 15px;
 }
-.max-temp{
-  font-weight: bold;
-}
-.min-temp{
-  opacity: 0.5;
-}
-.current-icon{
-  position: relative;
-  left: -100;
-}
-.forecast-day{
-text-align: center;
-}
+
+
 .github {
-  display: block;
+  display: flex;
   margin-top: 0;
-  text-align: center;
+  justify-content: center;
 }
 
 .weather-app{
   
-  margin: 75px;
+  margin: 25px;
   border: 1px solid black;
   border-radius: 4px;
   padding: 25px;
@@ -63,33 +54,4 @@ text-align: center;
     rgb(234, 251, 251) 77.6%,
     rgb(240, 251, 244) 100.7%
   );
-}
-
-.weather-details {
-  text-align: right;
-}
-.weather-icon{
-
-}
-
-.city-search {
-  width: 100%;
-  padding: 5px 8px;
-  margin-bottom: 15px;
-  border: 1px solid #040505;
-  border-radius: 4px;
-  line-height: 1.5;
-  font-family: "Courier New", Courier, monospace;
-}
-.city-submit {
-  width: 100%;
-  padding: 5px 8px;
-  margin-bottom: 15px;
-
-  border-radius: 4px;
-  line-height: 1.5;
-  color: #fff;
-  background: #0069d9;
-  border: #0069d9;
-  font-family: "Courier New", Courier, monospace;
 }

@@ -1,0 +1,26 @@
+.forecast-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.max-temp{
+    font-weight: bold;
+  }
+  .min-temp{
+    opacity: 0.5;
+  }
+  
+@media(max-width: 768px){
+
+.forecast-days{
+    display: none;
+}
+hr{
+    display: none;
+}
+body{
+    margin: 0 auto;
+}
+}
