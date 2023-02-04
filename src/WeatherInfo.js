@@ -6,22 +6,24 @@ import Temperature from "./Temperature";
 
 export default function WeatherInfo(props){
     return(
-        <div classNmae="WeatherInfo">
+        <div className="WeatherInfo">
             <h2 className="city">{props.data.city}</h2>
-                <div classname="container">
-                    <div className="row">
+                <div classname="container ">
+                    <div className="row justify-content-evenly">
                     <div className="col-6">
                         <ul>
                             <li>
-                                <img src={props.data.icon} alt={props.data.iconDescription} />
-                  <Temperature fahrenheit= {props.data.temperature} />
+                                <Temperature  fahrenheit= {props.data.temperature} />
+                                <img className="current-icon" src={props.data.icon} alt={props.data.iconDescription} />
+                  <li>{props.data.description}</li>
                             </li>
                          </ul>
                      </div>
+                    
                     <div className="col-6">
-                        <ul>
+                        <ul >
                             <li><DateFormat date={props.data.date} /></li>
-                            <li>{props.data.description}</li>
+                            
                             <li>Humidity: {props.data.humidity}%</li>
                             <li>Wind: {props.data.wind}mph</li>
                         </ul>
@@ -30,8 +32,8 @@ export default function WeatherInfo(props){
              
                     </div>
               </div>
-             
-          </div>
+             </div>
+          
       
  
     );

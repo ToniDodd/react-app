@@ -17,7 +17,6 @@ ul {
 form {
   text-align: center;
   margin-top: 12px;
-
   width: 100%;
 }
 
@@ -29,7 +28,19 @@ a {
 hr {
   padding: 15px;
 }
-
+.max-temp{
+  font-weight: bold;
+}
+.min-temp{
+  opacity: 0.5;
+}
+.current-icon{
+  position: relative;
+  left: -100;
+}
+.forecast-day{
+text-align: center;
+}
 .github {
   display: block;
   margin-top: 0;
@@ -58,7 +69,7 @@ hr {
   text-align: right;
 }
 .weather-icon{
-float: left;
+
 }
 
 .city-search {
