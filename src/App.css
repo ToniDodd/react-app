@@ -8,18 +8,8 @@ App{
 body{
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
-  width: 100%;
-
-}
-h2 {
-  text-align: center;
-  font-weight: 400;
-  font-size: 60px;
-  padding: 10px;
   font-family: 'Times New Roman', Times, serif;
-}
-ul {
+
 }
 
 
@@ -46,12 +36,5 @@ hr {
   padding: 25px;
   max-width: 700px;
 
-  background: radial-gradient(
-    328px at 2.9% 15%,
-    rgb(191, 224, 251) 0%,
-    rgb(232, 233, 251) 25.8%,
-    rgb(252, 239, 250) 50.8%,
-    rgb(234, 251, 251) 77.6%,
-    rgb(240, 251, 244) 100.7%
-  );
+  background: radial-gradient(circle at 0.2% 0.5%, rgb(252, 165, 241) 0%, rgb(181, 255, 255) 100.2%);
 }
